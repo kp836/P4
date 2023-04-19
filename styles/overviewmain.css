@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    font-family: CourierNew;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 5px solid cornflowerblue;
+    background-color: lightgreen;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+header {
+    padding: 1.5em 0 2em 0;
+    border-bottom: 3px cornflowerblue;
+    background-image: -moz-linear-gradient(
+            30deg, lightsalmon 0%, skyblue 30%, lightcoral 50%, aqua 80%, mediumpurple 100%);
+    background-image: -webkit-linear-gradient(
+            30deg, lightsalmon 0%, skyblue 30%, lightcoral 50%, aqua 80%, mediumpurple 100%);
+    background-image: -o-linear-gradient(
+            30deg, lightsalmon 0%, skyblue 30%, lightcoral 50%, aqua 80%, mediumpurple 100%);
+    background-image: linear-gradient(
+            30deg, lightsalmon 0%, skyblue 30%, lightcoral 50%, aqua 80%, mediumpurple 100%);
+}
+
+header h2 {
+    font-size: 175%;
+    color: lightblue;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+header img {
+    float: left;
+    padding: 0 30px;
+}
+
+.shadow {
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+main {
+    clear: left;
+}
+
+section {
+    width: 525px;
+    float: right;
+    padding: 0 20px 20px 20px;
+}
+
+section h1 {
+    color: lightblue;
+    font-size: 150%;
+    padding-top: .5em;
+    margin: 0;
+}
+
+section p {
+    padding-bottom: .5em;
+}
+
+section blockquote {
+    padding: 0 2em;
+    font-style: italic;
+}
+
+section ul {
+    padding: 0 0 .25em 1.25em;
+    list-style-type: circle;
+}
+
+section li {
+    padding-bottom: .35em;
+}
+
+article {
+    padding: .5em 0;
+}
+
+article h2 {
+    font-size: 115%;
+    padding: 0 0 .25em 0;
+}
+
+article img {
+    float: right;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
+}
+
+#navigation_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#navigation_bar ul li{
+    float: left; /* display horizontally */
+}
+
+#navigation_bar ul li a{
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none; /* removes underline for the link */
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+}
+
+#navigation_bar a.current {
+    color: yellow;
+}
+
+#navigation_bar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#navigation_bar ul ul li {
+    float: none;
+}
+
+#navigation_bar ul li:hover > ul {
+    display: block;
+}
+
+#navigation_bar > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+aside {
+    width: 215px;
+    float: right;
+    padding: 0 0 20px 20px;
+}
+
+aside h2 {
+    color: deepskyblue;
+    font-size: 130%;
+    padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+aside img {
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: palevioletred;
+    clear: both;
+}
+
+footer p {
+    text-align: center;
+    color: salmon;
+    padding: 1em 0;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
